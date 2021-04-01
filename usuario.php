@@ -14,8 +14,8 @@ class usuario extends Conexion
         $this->conexion = $this->conexion-> Connect();
     }
 
-    public function insertUsuario(string $nombre,int $telefono, string $email)
-    {
+    public function insertUsuario(string $nombre,int $telefono, string $email){
+
         $this->strNombre = $nombre;
         $this->intTelefono = $telefono;
         $this->strEmail = $email;

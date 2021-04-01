@@ -8,8 +8,7 @@
      private $db = "db_sistema";
      private $conect;
 
-     public function __construct()
-     {
+     public function __construct(){
          $conexionString = "mysql:hos=".$this->host.";dbname=".$this->db.";charset=utf8";
              try {
             $this->conect = new PDO($conexionString,$this->use,$this->password);
