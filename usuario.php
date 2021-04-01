@@ -24,7 +24,7 @@ class usuario extends Conexion
         $sql = "INSERT INTO Usuario(nombre,telefono,email) value(?,?,?)";
         $insert = $this->conexion->prepare($sql);
         $arrData = array($this->strNombre, $this->intTelefono, $this->strEmail);
-        $resInsert = $insert->execut($arrData);
+        $resInsert = $insert->execute($arrData);
         $idInsert = $this->conexion->lastInsertId();
         return $idInsert;
 

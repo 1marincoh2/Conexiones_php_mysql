@@ -10,5 +10,4 @@ $insert =$objUsuario->insertUsuario("jose",9831523633,"jose_aries@hotmail.com");
 echo "conectado".$insert;
 
 
-
 ?>
